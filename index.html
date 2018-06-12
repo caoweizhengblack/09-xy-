@@ -1,1 +1,23 @@
-<a href="main.html">dian</a>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<a href="pc/index.html">电脑版</a>
+		<a href="mobile/index.html">移动版</a>
+		
+		<script type="text/javascript">
+			//获得电脑平板手机浏览器的信息
+			var agent = navigator.userAgent.toLowerCase();
+			
+			//更具浏览器情况跳转到不同的画面
+			if(agent.indexOf('iphone') == -1 && agent.indexOf('android') == -1) {
+				location.href = 'pc/index.html';
+			} else {
+				location.href = 'mobile/index.html';
+			}
+		</script>
+	</body>
+</html>
